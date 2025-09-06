@@ -1,13 +1,14 @@
-# SoundChain
+# soundChain - Decentralized Music Marketplace
 
-This starter full stack project has been generated using AlgoKit. See below for default getting started instructions.
+A TypeScript prototype of a decentralized music marketplace on Algorand featuring royalty splits, programmable assets, user-owned identity, and membership NFTs.
 
-## Setup
+## 🏗️ Architecture
 
-### Initial setup
-1. Clone this repository to your local machine.
-2. Ensure [Docker](https://www.docker.com/) is installed and operational. Then, install `AlgoKit` following this [guide](https://github.com/algorandfoundation/algokit-cli#install).
-3. Run `algokit project bootstrap all` in the project directory. This command sets up your environment by installing necessary dependencies, setting up a Python virtual environment, and preparing your `.env` file.
+**Monorepo Structure (npm workspaces):**
+- `apps/web` - React + Vite + Tailwind + Pera Wallet frontend
+- `services/api` - Fastify API for indexer proxy and utilities
+- `sdk` - TypeScript utilities for building Algorand transactions
+- `contracts` - Beaker/PyTeal smart contracts (deployed separately)
 4. In the case of a smart contract project, execute `algokit generate env-file -a target_network localnet` from the `SoundChain-contracts` directory to create a `.env.localnet` file with default configuration for `localnet`.
 5. To build your project, execute `algokit project run build`. This compiles your project and prepares it for running.
 6. For project-specific instructions, refer to the READMEs of the child projects:
