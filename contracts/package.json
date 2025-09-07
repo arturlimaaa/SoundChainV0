@@ -1,0 +1,9 @@
+{
+  "name": "@soundchain/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for soundChain - placeholder for Beaker/PyTeal apps",
+  "scripts": {
+    "deploy": "echo 'Deploy smart contracts with AlgoKit'",
+    "test": "echo 'Test smart contracts'"
+  }
+}
